@@ -61,5 +61,10 @@
       "string.h": "c"
     },
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "aiXcoder.showTrayIcon": true
+    "aiXcoder.showTrayIcon": true,
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": true,
+      "strings": "off"
+    }
   }

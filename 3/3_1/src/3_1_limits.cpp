@@ -6,7 +6,7 @@ int main()
     using namespace std;
     int n_int = INT_MAX; //初始化n_int为int类型最大值
     short n_short = SHRT_MAX;
-    long n_long  =LONG_MAX;
+    long n_long  = LONG_MAX;
     long long n_llong = LLONG_MAX;
 
     cout << "int is " << sizeof(int) << " bytes." << endl;

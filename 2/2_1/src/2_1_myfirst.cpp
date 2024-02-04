@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main()
+int main(int argc, char *argv[])
 {
     using namespace std;
     cout << "Come up and C+++ me some time.";

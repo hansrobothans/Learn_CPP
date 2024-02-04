@@ -1,8 +1,8 @@
 @echo off
+setlocal enabledelayedexpansion
 
-for /r %%i in (*.exe) do (
-    del "%%i"
-    echo Deleted: %%i
+for /d /r %%i in (*build*, *bin*, *.exe) do (
+    rd /s /q "%%i"
 )
-
-echo Deletion complete.
+echo Delete bin Done!
+pause
