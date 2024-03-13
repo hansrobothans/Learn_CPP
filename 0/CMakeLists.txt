@@ -2,7 +2,7 @@
 cmake_minimum_required (VERSION 3.1)
 
 #项目的名称，不一定和你的文件夹名称一样
-project(2_1_myfirst)
+project(main)
 
 #设置c++编译器
 set(CMAKE_CXX_COMPILER "g++")
