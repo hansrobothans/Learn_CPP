@@ -66,5 +66,6 @@
       "other": "on",
       "comments": true,
       "strings": "off"
-    }
+    },
+    "cmake.sourceDirectory": "/workspaces/Learn_CPP/4/4_2_string"
   }

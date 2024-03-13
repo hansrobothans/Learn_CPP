@@ -1,5 +1,6 @@
 #规定cmake的最低版本要求
-cmake_minimum_required (VERSION 3.21)
+cmake_minimum_required (VERSION 3.1)
+
 #项目的名称，不一定和你的文件夹名称一样
 project(2_1_myfirst)
 
