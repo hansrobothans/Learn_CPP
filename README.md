@@ -1,6 +1,8 @@
 <!-- TOC -->
 
 - [1. Learn\_CPP](#1-learn_cpp)
+  - [github codespace在线编辑](#github-codespace在线编辑)
+  - [切换默认CMakeLists.txt](#切换默认cmakeliststxt)
 - [2. 开始学习C++](#2-开始学习c)
 - [3. 第三章 处理数据](#3-第三章-处理数据)
   - [3.1. 简单变量](#31-简单变量)
@@ -35,6 +37,17 @@
 
 <!-- /TOC -->
 # 1. Learn_CPP
+## github codespace在线编辑
+* 打开github仓库地址，直接按下**.**，即可打开githu的VSCode在线打开
+* 打开后在运行调试点击运行，可创建codespace
+
+## 切换默认CMakeLists.txt
+* 打开根目录下的.vscode/settings.json
+- [settings.json](./.vscode/settings.json)
+* 更改参数，运行根目录下clean脚本，即可重新运行
+* "cmake.sourceDirectory": "/workspaces/Learn_CPP/4/4_1_arrayone"
+
+
 
 # 2. 开始学习C++
 
