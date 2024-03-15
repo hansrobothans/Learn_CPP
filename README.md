@@ -61,7 +61,9 @@
 - [settings.json](./.vscode/settings.json)
 * 更改参数，运行根目录下clean脚本，即可重新运行
 * "cmake.sourceDirectory": "/workspaces/Learn_CPP/4/4_1_arrayone"
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 
 
 <a id="toc_anchor" name="#2-开始学习C++"></a>
@@ -86,10 +88,12 @@
 5. 以两个下划线或下划线和大写字母打头的名称被保留给实现（编译器及其使用的资源）使用。以一个下划线开头的名称被保留给实现，用作全局标识符
 6. C++名称长度没有限制，但是有些平台有限制
 
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#312-整型"></a>
 
 ### 3.1.2. 整型
-
 <a id="toc_anchor" name="#313-运算符sizeof和头文件limits"></a>
 
 ### 3.1.3. 运算符sizeof和头文件limits
@@ -122,16 +126,16 @@
 | LLONG_MIN | long long的最小值 |
 | ULLONG_MAX | unsigned long long的最大值 |
 
-3. 符号常量
+1. 符号常量
 * 被设计用来C和C++的头文件必须使用#define
 * C++使用关键之const方式创建符号常量
 
-4. 初始化
+1. 初始化
 * 将变量初始化为字面值常量
 * 将变量初始化为另一个变量，条件是后者已经定义过
 * 将变量初始化为表达式，条件是当程序执行到该声明时，表达式中的所有值都是已知的。
 
-5. C++11初始化方式
+1. C++11初始化方式
 ```c {.line-numbers}
    int i = {0};
    int i{0};   // 可以不需要等号
@@ -149,15 +153,19 @@
 * C++并不保证整型超越限制（上溢和下溢）时不出错
 ![3_1典型的整数溢出行为](./image/3_1典型的整数溢出行为.png)  
 
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#315-选择整型类型"></a>
 
 ### 3.1.5. 选择整型类型
 * 节省一点就是赢得一点
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#316-整型字面值"></a>
 
 ### 3.1.6. 整型字面值
-
 | 进制 | 说明     |
 | -------- | -------- |
 | 10进制 | 如果第一位为1~9   |
@@ -172,6 +180,9 @@
 | 8进制 | cout << oct   |
 | 16进制 | cout << hex   |
 
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#317-C++常亮类型"></a>
 
 ### 3.1.7. C++常亮类型
@@ -184,7 +195,9 @@
 * 长度：
   * 对于不带后缀的十进制，按照int、long、long long的顺序查找最长的匹配类型
   * 对于不带后缀的八进制和十六进制，按照unsigned int、unsigned int、unsigned long、unsigned long long的顺序查找最长的匹配类型
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#318-char类型：字符和小整数"></a>
 
 ### 3.1.8. char类型：字符和小整数
@@ -208,14 +221,18 @@
    * 无符号类型
    * u前缀表示char16_t
    * U前缀表示char32_t
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#319-bool类型"></a>
 
 ### 3.1.9. bool类型
 * **非0即1**
 * true转换成1，false转换成0
 * 任何数字值或指针值都可以被隐式转换成bool（即不用显式强制转换）
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#32-const限定符"></a>
 
 ## 3.2. const限定符
@@ -224,12 +241,16 @@
    * 明确指定类型
    * 使用C++作用域将定义限制在特定的函数或者文件中
    * 可以用于更复杂的类型，如数组和结构
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#33-浮点数"></a>
 
 ## 3.3. 浮点数
 * 数值和缩放因子
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#331-书写浮点数"></a>
 
 ### 3.3.1. 书写浮点数
@@ -239,7 +260,6 @@
   d.ddE-n
   d.dde+n
   -d.ddE+n
-
 <a id="toc_anchor" name="#332-浮点类型"></a>
 
 ### 3.3.2. 浮点类型
@@ -256,13 +276,18 @@
    * 调用cout.setf(ios_base::fixed, ios_base::floatfield)会保留小数点后的0
    * 调用cout.setf(ios_base::scientific, ios_base::floatfield)会使用科学计数法
 
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#333-浮点常量"></a>
 
 ### 3.3.3. 浮点常量
 * 默认浮点常量都是double类型
 * 希望浮点常量是float类型，需要在数字后面加上f或F
 * 对于long double类型，需要在数字后面加上l或L
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#334-浮点常量的优缺点"></a>
 
 ### 3.3.4. 浮点常量的优缺点
@@ -273,6 +298,9 @@
    * 运算速度慢
    * 精度将降低
 
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#34-C++算术运算符"></a>
 
 ## 3.4. C++算术运算符
@@ -284,24 +312,32 @@
   * 求模
   * 操作数只能是整数
   * 如果操作数其中一个是负数，则满足如下规则：(a/b)*b + a%b = a
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#341-运算符优先级和结合性"></a>
 
 ### 3.4.1. 运算符优先级和结合性
 1. 优先级
 2. 结合性(方向)
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#342-除法分支"></a>
 
 ### 3.4.2. 除法分支
 1. 两个操作数都是整数，则结果为整数
 2. 其中一个或者两个为小数，则结果为浮点数
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#343-求模运算符"></a>
 
 ### 3.4.3. 求模运算符
 1. 求模运算符的结果是整数
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#344-类型转换"></a>
 
 ### 3.4.4. 类型转换
@@ -337,16 +373,19 @@
      * typeName (value) // 纯粹的C++
    * 4个强制类型转换运算符（15章介绍）
      * static_cast\<typeName> (value) 可用于将值从一种数值类型转换为另一种数值类型
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#35-C++11中的auto声明（第9章）"></a>
 
 ## 3.5. C++11中的auto声明（第9章）
 * 如果使用关键字auto,而不指定变量的类型,编译器将把变量的类型设置成与初始值相同:
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#4-复合类型"></a>
 
 # 4. 复合类型
-
 <a id="toc_anchor" name="#41-数组"></a>
 
 ## 4.1. 数组
@@ -354,12 +393,14 @@
   1. 存储在每个元素中的值的类型;
   2. 数组名;
   3. 数组中的元素数。编译时已知
-
 * 数组使用：
   1. 可以单独访问数组元素。使用下标或者索引。
   2. 从0开始
   3. 编译器不会检查使用发下标是否有效
 
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#411-数组初始化规则"></a>
 
 ### 4.1.1. 数组初始化规则
@@ -368,7 +409,9 @@
 3. 初始化数组时,提供的值的个数可以少于数组的元素数目。
 4. 如果只对数组的一部分进行初始化,则编译器将把其他元素设置为0。
 5. 如果初始化数组时方括号内([])为空,C++编译器将计算元素个数
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#412-C++11数组初始化方法"></a>
 
 ### 4.1.2. C++11数组初始化方法
@@ -376,7 +419,9 @@
 * 初始化数组时,可省略等号(=)
 * 可不在大括号内包含任何东西,这将把所有元素都设置为零
 * 列表初始化禁止缩窄转换
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#42-字符串"></a>
 
 ## 4.2. 字符串
@@ -388,12 +433,16 @@
    * 字符串读入char数组中时，会自动加上空字符
    * 字符串常量不能与字符常量互换
 2. 基于string类库
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#421-拼接字符串常量"></a>
 
 ### 4.2.1. 拼接字符串常量
 * 任何两个由空白(空格、制表符和换行符)分隔的字符串常量都将**自动拼接**成一个。
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
 <a id="toc_anchor" name="#422-在数组中使用字符串"></a>
 
 ### 4.2.2. 在数组中使用字符串
@@ -401,7 +450,6 @@
 2. 将键盘或文件输入读入到数组中
 3. 确认字符串长度(只计算可见字符长度)-strlen()
 - [4_2_string.cpp](./4/4_2_string/src/4_2_string.cpp)
-
 <a id="toc_anchor" name="#423-cin"></a>
 
 ### 4.2.3. cin
@@ -434,4 +482,6 @@
      * 当前做法：当get()（不是getline()）读取空行后将设置时效为（failbit），之后输入将被阻断。使用cin.clear()来恢复输入。
    * 其他问题：
      * 输入行包含的字符数比指定的多，get()和getline()将把余下字符留在输入队列，而getline()会设置失效位，并关闭之后输入。
-
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
