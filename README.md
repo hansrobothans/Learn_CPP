@@ -44,6 +44,13 @@
         - [string类I/O](#434-string类I/O)
         - [其他形式的字符串字面值](#435-其他形式的字符串字面值)
     - [结构简介](#44-结构简介)
+        - [在程序中使用结构](#441-在程序中使用结构)
+        - [C++11结构体初始化](#442-C++11结构体初始化)
+        - [结构体可以将string类作为成员吗？可以！](#443-结构体可以将string类作为成员吗？可以！)
+        - [其他结构属性](#444-其他结构属性)
+        - [结构数组](#445-结构数组)
+        - [结构体中的位字段](#446-结构体中的位字段)
+    - [共用体](#45-共用体)
 
 <!-- /TOC -->
 
@@ -576,3 +583,74 @@
   * 定义结构描述
   * 创建结构变量
 * C++允许在声明结构体变量时省略关键字struct
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
+<a id="toc_anchor" name="#441-在程序中使用结构"></a>
+
+### 4.4.1. 在程序中使用结构
+- [4_11_structur.cpp](./4/4_11_structur/src/4_11_structur.cpp)
+* C++不提倡使用外部变量，但是提倡使用外部结构体声明。另外在外部声明符号常量通常更合理
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
+<a id="toc_anchor" name="#442-C++11结构体初始化"></a>
+
+### 4.4.2. C++11结构体初始化
+* 列表初始化，且等号可选
+* 若大括号未包含任何东西，每个成员被设置为零
+* 不允许缩窄转换
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
+<a id="toc_anchor" name="#443-结构体可以将string类作为成员吗？可以！"></a>
+
+### 4.4.3. 结构体可以将string类作为成员吗？可以！
+```c++
+#include <string>
+struct inflatable
+{
+  std::string name;
+  float volume;
+  double price;
+};
+```
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
+<a id="toc_anchor" name="#444-其他结构属性"></a>
+
+### 4.4.4. 其他结构属性
+* 可以作为函数参数或者返回值
+* 可以使用赋值运算符将整个结构体赋值给另一个结构体变量（成员赋值）
+* 可以同时完成定义结构体和创建结构体变量
+* 可以声明没有名称的结构体类型
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
+<a id="toc_anchor" name="#445-结构数组"></a>
+
+### 4.4.5. 结构数组
+
+<a id="toc_anchor" name="#446-结构体中的位字段"></a>
+
+### 4.4.6. 结构体中的位字段
+* 允许指定占用特定位数的结构体成员
+* 字段的类型应该为整型或者枚举，接下来是冒号，冒号后面是一个数字，它指定了使用的位数
+* 可以使用没有名称的字段来提供间距
+* 每个成员都被称为位字段
+```c++
+struct torgle_register
+{
+  unsigned int SN : 4;  // 4 bits for SN value
+  unsigned int : 4;     // 4 bits unused
+  bool goodIn : 1;      // valid input (1 bit)
+  bool goodTorgle : 1;  // successful torgling
+}
+```
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
+<a id="toc_anchor" name="#45-共用体"></a>
+
+## 4.5. 共用体
