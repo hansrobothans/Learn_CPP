@@ -36,6 +36,14 @@
         - [在数组中使用字符串](#422-在数组中使用字符串)
         - [cin](#423-cin)
         - [每次读取一行字符串输入](#424-每次读取一行字符串输入)
+        - [混合输入字符串和数字](#425-混合输入字符串和数字)
+    - [string类](#43-string类)
+        - [C++11字符串初始化](#431-C++11字符串初始化)
+        - [赋值、拼接和附加](#432-赋值、拼接和附加)
+        - [string类的其他操作](#433-string类的其他操作)
+        - [string类I/O](#434-string类I/O)
+        - [其他形式的字符串字面值](#435-其他形式的字符串字面值)
+    - [结构简介](#44-结构简介)
 
 <!-- /TOC -->
 
@@ -454,8 +462,10 @@
 
 ### 4.2.3. cin
 - [4_3_instr1.cpp](./4/4_3_instr1/src/4_3_instr1.cpp)
-* cin使用空白(空格、制表符和换行符)来确定字符串的结束位置
+* cin使用空白(空格、制表符和换行符)来确定字符串的结束位置，且**空白符会保存在输入队列**
 * cin在获取字符数组输入时，只读取一个单词
+* cin开始输入之前它们跳过空白（空格、换行符和制表符）
+* 
 
 <div align="right">
     <b><a href="#1-Learn_CPP">↥ back to top</a></b>
@@ -467,7 +477,8 @@
    - [4_4_instr2.cpp](./4/4_4_instr2/src/4_4_instr2.cpp)
    * 字符个数包括不可见字符
    * 默认使用换行符作为结束标志
-   * 不保存输入的字符串的结束标志（如换行符）
+   * 不读入输入的字符串的结束标志（如换行符）
+   * **结束符不会保存在输入队列**
 2. 面向行的输入：**cin.get**
    - [4_5_instr3.cpp](./4/4_5_instr3/src/4_5_instr3.cpp)
    * cin.get(char* s, streamsize n)：会读取到行尾，但是**换行符会保存在输入队列**
@@ -485,3 +496,83 @@
 <div align="right">
     <b><a href="#1-Learn_CPP">↥ back to top</a></b>
 </div>
+
+<a id="toc_anchor" name="#425-混合输入字符串和数字"></a>
+
+### 4.2.5. 混合输入字符串和数字
+* 当混合输入数字和字符串时，需注意数字会把换行符留在输入队列中
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
+
+<a id="toc_anchor" name="#43-string类"></a>
+
+## 4.3. string类
+- [4_7_strtype1.cpp](./4/4_7_strtype1/src/4_7_strtype1.cpp)
+* C++98添加
+* 需包含头文件string，string类位于命名空间std中
+* string对象和字符数数组区别：
+  * 可以将string对象声明为简单变量而不是数组
+  * 类设计可以让程序**自动处理**string的大小
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
+<a id="toc_anchor" name="#431-C++11字符串初始化"></a>
+
+### 4.3.1. C++11字符串初始化
+
+<a id="toc_anchor" name="#432-赋值、拼接和附加"></a>
+
+### 4.3.2. 赋值、拼接和附加
+- [4_8_strtype2.cpp](./4/4_8_strtype2/src/4_8_strtype2.cpp)
+* 可以将一个string对象赋值给另一个string对象，而数组不可以
+* 可以使用+合并两个string对象，可以使用+=追加
+* 可以将C风格字符串或string对象与string对象相加，或将他们附加到sting对象的末尾
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
+<a id="toc_anchor" name="#433-string类的其他操作"></a>
+
+### 4.3.3. string类的其他操作
+- [4_9_strtype3.cpp](./4/4_9_strtype3/src/4_9_strtype3.cpp)
+* 对于c风格字符串，使用cstring中的函数完成操作
+* string对象相较于c风格字符数组优势：
+  * 处理时语法更简单
+  * 字符数组总是存在目标数组过小，无法存储指定信息的危险
+  * string类具有自动调整大小的功能
+  * c风格字符串，提供**strncat()和strncpy()**，可以指定目标数组最大允许长度
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
+<a id="toc_anchor" name="#434-string类I/O"></a>
+
+### 4.3.4. string类I/O
+- [4_10_strtype4.cpp](./4/4_10_strtype4/src/4_10_strtype4.cpp)
+* 处理string对象的代码使用string类的一个友元函数
+<a id="toc_anchor" name="#435-其他形式的字符串字面值"></a>
+
+### 4.3.5. 其他形式的字符串字面值
+| 字符类型 | 字面值前缀    |标准    |
+| --------  | --------  | ---    |
+| char      |           |        |
+| wchar_t   |  L        |        |
+| char16_t  |  u        | C++11  |
+| char32_t  |  U        | C++11  |
+
+* C++11新增：
+  * UTF-8使用u8前缀
+  * 原始（raw）字符串：
+    * R前缀（即不再转义，界定符为 **"(** 和 **)"**）
+    * 允许支持自定义界定符：
+      * 如：**"+*(** 和 **)+*"**
+      * 默认界定符之间添加任意数量的基本字符，但空格、括号、斜杠和控制字符除外
+<div align="right">
+    <b><a href="#1-Learn_CPP">↥ back to top</a></b>
+</div>
+<a id="toc_anchor" name="#44-结构简介"></a>
+
+## 4.4. 结构简介
+* 创建结构：
+  * 定义结构描述
+  * 创建结构变量
+* C++允许在声明结构体变量时省略关键字struct

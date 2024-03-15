@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "begin"
+echo "begin clean"
 # 此脚本删除当前目录下所有 bin 文件夹。
 
 # 获取当前工作目录。
