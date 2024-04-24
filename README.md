@@ -63,6 +63,7 @@
     - [4.8.1. 指针和字符串](#481-指针和字符串)
     - [4.8.2. 使用new创建动态结构](#482-使用new创建动态结构)
     - [4.8.3. 分配内存的方法：自动存储、静态存储、动态存储和线程存储](#483-分配内存的方法自动存储静态存储动态存储和线程存储)
+  - [4.9. 类型组合](#49-类型组合)
 
 <style>  
   .right-link {  
@@ -152,7 +153,7 @@
 
 1. C++11 初始化方式
 
-```c {.line-numbers}
+```c {.line-numbers} copy
    int i = {0};
    int i{0};   // 可以不需要等号
    int i = {}; // 初始化为0
@@ -338,7 +339,7 @@
    - 大括号的初始化称为列表初始化
    - 列表初始化不允许**缩窄**
    - 且列表初始化需要**常量**
-     ```c {.line-numbers}
+     ```c {.line-numbers} copy
      const int code = 66;
      int x=66;
      char c1 {31325}; // 缩窄，不被允许
@@ -546,7 +547,7 @@
 
 ### 4.4.3. 结构体可以将 string 类作为成员吗？可以！
 
-```c++ {.line-numbers}
+```c++ {.line-numbers}  copy
 #include <string>
 struct inflatable
 {
@@ -575,7 +576,7 @@ struct inflatable
 - 可以使用没有名称的字段来提供间距
 - 每个成员都被称为位字段
 
-```c++ {.line-numbers}
+```c++ {.line-numbers}  copy
 struct torgle_register
 {
   unsigned int SN : 4;  // 4 bits for SN value
@@ -672,7 +673,7 @@ struct torgle_register
 * 静态联编
 * 动态数组
 1. 使用new创建动态数组
-```c++ {.line-numbers}
+```c++ {.line-numbers}  copy
 int *p = new int [10]; // 返回第一个元素地址
 delete [] p;
 ```
@@ -742,3 +743,6 @@ delete [] p;
   1. new和delete运算符提供了一种比自动变量和静态变量更灵活的方法。 
   2. 自由存储空间（free store） 或堆（heap）
   3. new和delete可以在一个函数中分配，而在另一个函数中释放
+
+## 4.9. 类型组合
+* 数组、结构体和指针
