@@ -91,6 +91,8 @@
 <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
 
 # 2. 开始学习 C++
+<details>
+<summary>3. 第三章 处理数据</summary>
 
 # 3. 第三章 处理数据
 
@@ -367,6 +369,10 @@
 
 - 如果使用关键字 auto,而不指定变量的类型,编译器将把变量的类型设置成与初始值相同:
   <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+</details>
+
+<details>
+<summary>4. 复合类型</summary>
 
 # 4. 复合类型
 
@@ -746,3 +752,4 @@ delete [] p;
 
 ## 4.9. 类型组合
 * 数组、结构体和指针
+</details>
