@@ -1,4 +1,5 @@
 @echo off
+chcp 65001
 setlocal enabledelayedexpansion
 
 for /d /r %%i in (*build*, *bin*) do (
@@ -11,4 +12,4 @@ for /r %%i in (*.exe) do (
     echo Deleted: %%i
 )
 echo Delete bin Done!
-pause
+@REM pause

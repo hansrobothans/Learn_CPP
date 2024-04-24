@@ -15,7 +15,7 @@ int main()
     cout << "Here are some felines:\n";
     cout << charr1 << " " << charr2 << " "
          << str1 << " " << str2 << endl;
-    cout << "The third letter in " << charr2 << " is " 
+    cout << "The third letter in " << charr2 << " is "
          << charr2[2] << endl;
     cout << "The third letter in " << str2 << " is "
          << str2[2] << endl;

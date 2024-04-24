@@ -17,7 +17,7 @@ int main()
     cout << "hats = " << hats << ", heads = " << heads << endl;
     cout << "hats +  heads = " << hats + heads << endl;
     cout << "hats -  heads = " << hats - heads << endl;
-    cout << "hats *  heads = " << hats * heads << endl;
+    cout << "hats *  heads = " << hats *heads << endl;
     cout << "hats /  heads = " << hats / heads << endl;
     return 0;
 }

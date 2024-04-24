@@ -12,7 +12,7 @@ aux_source_directory(./src SrcFiles)
 
 # 添加可执行文件
 # 添加一个名为"main"的可执行文件由SrcFiles变量中的源文件构建。
-add_executable(4_10_strtype4.exe ${SrcFiles})
+add_executable(4_10_strtype4 ${SrcFiles})
 
 #添加头文件的搜索路径
 include_directories(${PROJECT_SOURCE_DIR}/include)

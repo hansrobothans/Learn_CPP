@@ -1,4 +1,5 @@
 @echo on
+chcp 65001
 
 "D:\program files\AStyle\bin\AStyle.exe" .\/*.c   --style=allman --indent=spaces=4 --indent-preproc-block --pad-oper --pad-header --unpad-paren --suffix=none --align-pointer=name --lineend=linux --convert-tabs --verbose -r
 "D:\program files\AStyle\bin\AStyle.exe" .\/*.h   --style=allman --indent=spaces=4 --indent-preproc-block --pad-oper --pad-header --unpad-paren --suffix=none --align-pointer=name --lineend=linux --convert-tabs --verbose -r
