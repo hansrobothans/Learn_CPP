@@ -77,13 +77,6 @@
     - [4.10.2. 模板类array（C++）](#4102-模板类arrayc)
     - [4.10.3. 比较数组、vector对象和array对象](#4103-比较数组vector对象和array对象)
 
-<style>  
-  .right-link {  
-    float: right;  
-    margin-left: 10px; /* 可选：添加间距 */  
-  }  
-</style>
-
 # 1. Learn_CPP
 
 ## 1.1. github codespace 在线编辑
@@ -100,7 +93,7 @@
 - 更改参数，运行根目录下 clean 脚本，即可重新运行
 - "cmake.sourceDirectory": "/workspaces/Learn_CPP/4/4_1_arrayone"
 
-<a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 # 2. 开始学习 C++
 ## 2.1. 进入C++
@@ -116,10 +109,6 @@
 > using std::endl;  
 > using std::cin;  
 
-
-<details>
-<summary>3. 第三章 处理数据</summary>
-
 # 3. 第三章 处理数据
 
 ## 3.1. 简单变量
@@ -133,7 +122,7 @@
 5. 以两个下划线或下划线和大写字母打头的名称被保留给实现（编译器及其使用的资源）使用。以一个下划线开头的名称被保留给实现，用作全局标识符
 6. C++名称长度没有限制，但是有些平台有限制
 
-<a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 3.1.2. 整型
 
@@ -190,7 +179,7 @@
 
 - 有助于更好的防范类型转换错误
 - 使新手更容易学习 C++
-  <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+  <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 3.1.4. 无符号类型
 
@@ -199,12 +188,12 @@
 - C++并不保证整型超越限制（上溢和下溢）时不出错
   ![3_1典型的整数溢出行为](./image/3_1典型的整数溢出行为.png)
 
-<a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 3.1.5. 选择整型类型
 
 - 节省一点就是赢得一点
-  <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+  <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 3.1.6. 整型字面值
 
@@ -222,7 +211,7 @@
 | 8 进制  | cout << oct |
 | 16 进制 | cout << hex |
 
-<a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 3.1.7. C++常亮类型
 
@@ -235,7 +224,7 @@
 - 长度：
   - 对于不带后缀的十进制，按照 int、long、long long 的顺序查找最长的匹配类型
   - 对于不带后缀的八进制和十六进制，按照 unsigned int、unsigned int、unsigned long、unsigned long long 的顺序查找最长的匹配类型
-    <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+    <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 3.1.8. char 类型：字符和小整数
 
@@ -259,14 +248,14 @@
    - 无符号类型
    - u 前缀表示 char16_t
    - U 前缀表示 char32_t
-     <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+     <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 3.1.9. bool 类型
 
 - **非 0 即 1**
 - true 转换成 1，false 转换成 0
 - 任何数字值或指针值都可以被隐式转换成 bool（即不用显式强制转换）
-  <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+  <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ## 3.2. const 限定符
 
@@ -275,12 +264,12 @@
    - 明确指定类型
    - 使用 C++作用域将定义限制在特定的函数或者文件中
    - 可以用于更复杂的类型，如数组和结构
-     <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+     <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ## 3.3. 浮点数
 
 - 数值和缩放因子
-  <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+  <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 3.3.1. 书写浮点数
 
@@ -307,14 +296,14 @@
    - 调用 cout.setf(ios_base::fixed, ios_base::floatfield)会保留小数点后的 0
    - 调用 cout.setf(ios_base::scientific, ios_base::floatfield)会使用科学计数法
 
-<a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 3.3.3. 浮点常量
 
 - 默认浮点常量都是 double 类型
 - 希望浮点常量是 float 类型，需要在数字后面加上 f 或 F
 - 对于 long double 类型，需要在数字后面加上 l 或 L
-  <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+  <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 3.3.4. 浮点常量的优缺点
 
@@ -325,7 +314,7 @@
    - 运算速度慢
    - 精度将降低
 
-<a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ## 3.4. C++算术运算符
 
@@ -337,24 +326,24 @@
   - 求模
   - 操作数只能是整数
   - 如果操作数其中一个是负数，则满足如下规则：(a/b)\*b + a%b = a
-    <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+    <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 3.4.1. 运算符优先级和结合性
 
 1. 优先级
 2. 结合性(方向)
-   <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+   <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 3.4.2. 除法分支
 
 1. 两个操作数都是整数，则结果为整数
 2. 其中一个或者两个为小数，则结果为浮点数
-   <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+   <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 3.4.3. 求模运算符
 
 1. 求模运算符的结果是整数
-   <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+   <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 3.4.4. 类型转换
 
@@ -389,16 +378,12 @@
      - (typeName) value // 来自 C 语言
      - typeName (value) // 纯粹的 C++
    - 4 个强制类型转换运算符（15 章介绍） \* static_cast\<typeName> (value) 可用于将值从一种数值类型转换为另一种数值类型
-     <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+     <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ## 3.5. C++11 中的 auto 声明（第 9 章）
 
 - 如果使用关键字 auto,而不指定变量的类型,编译器将把变量的类型设置成与初始值相同:
-  <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
-</details>
-
-<details>
-<summary>4. 复合类型</summary>
+  <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 # 4. 复合类型
 
@@ -413,7 +398,7 @@
   2. 从 0 开始
   3. 编译器不会检查使用发下标是否有效
 
-<a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.1.1. 数组初始化规则
 
@@ -422,7 +407,7 @@
 3. 初始化数组时,提供的值的个数可以少于数组的元素数目。
 4. 如果只对数组的一部分进行初始化,则编译器将把其他元素设置为 0。
 5. 如果初始化数组时方括号内([])为空,C++编译器将计算元素个数
-   <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+   <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.1.2. C++11 数组初始化方法
 
@@ -431,7 +416,7 @@
 - 初始化数组时,可省略等号(=)
 - 可不在大括号内包含任何东西,这将把所有元素都设置为零
 - 列表初始化禁止缩窄转换
-  <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+  <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ## 4.2. 字符串
 
@@ -443,12 +428,12 @@
    - 字符串读入 char 数组中时，会自动加上空字符
    - 字符串常量不能与字符常量互换
 2. 基于 string 类库
-   <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+   <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.2.1. 拼接字符串常量
 
 - 任何两个由空白(空格、制表符和换行符)分隔的字符串常量都将**自动拼接**成一个。
-  <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+  <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.2.2. 在数组中使用字符串
 
@@ -467,7 +452,7 @@
 * cin 开始输入之前它们跳过空白（空格、换行符和制表符）
 *
 
-<a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.2.4. 每次读取一行字符串输入
 
@@ -490,12 +475,12 @@
      - 最初做法：下一条输入语句将在前一条 getline()或 get()结束读取的位置开始读取
      - 当前做法：当 get()（不是 getline()）读取空行后将设置时效为（failbit），之后输入将被阻断。使用 cin.clear()来恢复输入。
    - 其他问题： \* 输入行包含的字符数比指定的多，get()和 getline()将把余下字符留在输入队列，而 getline()会设置失效位，并关闭之后输入。
-     <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+     <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.2.5. 混合输入字符串和数字
 
 - 当混合输入数字和字符串时，需注意数字会把换行符留在输入队列中
-  <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+  <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ## 4.3. string 类
 
@@ -506,7 +491,7 @@
 * string 对象和字符数数组区别：
   - 可以将 string 对象声明为简单变量而不是数组
   - 类设计可以让程序**自动处理**string 的大小
-    <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+    <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.3.1. C++11 字符串初始化
 
@@ -517,7 +502,7 @@
 * 可以将一个 string 对象赋值给另一个 string 对象，而数组不可以
 * 可以使用+合并两个 string 对象，可以使用+=追加
 * 可以将 C 风格字符串或 string 对象与 string 对象相加，或将他们附加到 sting 对象的末尾
-  <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+  <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.3.3. string 类的其他操作
 
@@ -529,7 +514,7 @@
   - 字符数组总是存在目标数组过小，无法存储指定信息的危险
   - string 类具有自动调整大小的功能
   - c 风格字符串，提供**strncat()和 strncpy()**，可以指定目标数组最大允许长度
-    <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+    <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.3.4. string 类 I/O
 
@@ -553,7 +538,7 @@
     _ 允许支持自定义界定符：
     _ 如：\*\*"+_(** 和 **)+_"\*\*
     _ 默认界定符之间添加任意数量的基本字符，但空格、括号、斜杠和控制字符除外
-    <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+    <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ## 4.4. 结构简介
 
@@ -561,21 +546,21 @@
   - 定义结构描述
   - 创建结构变量
 - C++允许在声明结构体变量时省略关键字 struct
-  <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+  <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.4.1. 在程序中使用结构
 
 - [4_11_structur.cpp](./4/4_11_structur/src/4_11_structur.cpp)
 
 * C++不提倡使用外部变量，但是提倡使用外部结构体声明。另外在外部声明符号常量通常更合理
-  <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+  <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.4.2. C++11 结构体初始化
 
 - 列表初始化，且等号可选
 - 若大括号未包含任何东西，每个成员被设置为零
 - 不允许缩窄转换
-  <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+  <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.4.3. 结构体可以将 string 类作为成员吗？可以！
 
@@ -589,7 +574,7 @@ struct inflatable
 };
 ```
 
-<a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.4.4. 其他结构属性
 
@@ -597,7 +582,7 @@ struct inflatable
 - 可以使用赋值运算符将整个结构体赋值给另一个结构体变量（成员赋值）
 - 可以同时完成定义结构体和创建结构体变量
 - 可以声明没有名称的结构体类型
-  <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+  <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.4.5. 结构数组
 
@@ -618,7 +603,7 @@ struct torgle_register
 }
 ```
 
-<a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ## 4.5. 共用体
 
@@ -637,7 +622,7 @@ struct torgle_register
   - 对于枚举，只定义了赋值运算符，没有定义算术运算符
   - 枚举量是整型，可被提升为 int 类型，但 int 不能自动转换成枚举类型
   - 如果 int 值有效，则可以通过强制类型转换将 int 值赋给枚举变量
-    <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+    <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.6.1. 设置枚举量的值
 
@@ -647,7 +632,7 @@ struct torgle_register
 2. 指定的值，必须是整数
 3. 也可以显式地定义其中一些枚举量的值。默认从零开始。后面未定义的值，比前面枚举量大 1。
 4. 可以创建多个值相同的枚举量
-   <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+   <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.6.2. 枚举的取值范围
 
@@ -656,7 +641,7 @@ struct torgle_register
 2. 下限：
    1. 最小值不小于 0，则下限为 0
    2. 最小值小于 0，最大值的最小 2 次幂减 1 加上负号。如-6 -> -8 -> -7
-      <a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+      <div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ## 4.7. 指针和自由存储空间
 - 显示地址时，cout 使用十六进制
@@ -664,7 +649,7 @@ struct torgle_register
 - <b>*</b>运算符：间接值或解除引用运算符
 - [4_14_address.cpp](./4/4_14_address/src/4_14_address.cpp)
 - [4_15_pointer.cpp](./4/4_15_pointer/src/4_15_pointer.cpp)
-<a href="#1-Learn_CPP" class="right-link">↥ back to top</a>
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.7.1. 声明和初始化指针
 - \* 运算符两边空格可选
@@ -673,12 +658,15 @@ struct torgle_register
 - 指向不同类型的指针变量长度相同
 - 在声明时初始化指针，被初始化的是指针而不是它指向的值
 [4_16_init_ptr.cpp](./4/4_16_init_ptr/src/4_16_init_ptr.cpp)
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.7.2. 指针的危险
 * 创建指针时，并不会分配用来存储指针所指向数据的内存
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.7.3. 指针和数字
 * 将数字值作为地址使用，应当通过强制类型转换为适当的地址类型，否则会报错
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
   
 ### 4.7.4. 使用new来分配内存
 * 数据对象：为数据项分配的内存块
@@ -691,6 +679,7 @@ struct torgle_register
   * 常规变量在栈
   * new从堆或者自由存储区分配内存
 * 值为0的指针被称为空指针
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.7.5. 使用delete释放内存
 * 使用delete，后面加上指向new分配的内存的指针
@@ -698,6 +687,7 @@ struct torgle_register
 * 一定要成对使用new和delete，否则会发生内存泄漏
 * 使用delete的关键，将它用于new分配的内存。不一定非是new的指针变量，如不同指针指向同一个new的内存的情况
 * 一般来说，不要创建两个指向同一内存的指针，因为这将增加错误删除同一内存块两次的可能性。
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.7.6. 使用new创建动态数组
 * 对于大型数据（如数组，字符串和结构体），应当使用new
@@ -718,6 +708,7 @@ delete [] p;
 * 不能用sizeof运算符确定动态分配的数组包含的字节数
 2. 使用动态数组
 [4_18_arraynew.cpp](./4/4_18_arraynew/src/4_18_arraynew.cpp)
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ## 4.8. 指针、数组和指针算术
 * 指针和数组基本等价的原因在于指针算术和C++内部处理数组的方式
@@ -744,6 +735,7 @@ delete [] p;
   7. arr是一个int指针（int *）
   8. &arr是一个，指向包含指向10个元素的int数组（int (*)[10]）
   > int (*p)[10] = &arr;
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.8.2. 指针小结
 1. 声明指针
@@ -754,6 +746,7 @@ delete [] p;
 6. 指针算术
 7. 数组的动态联编和静态联编
 8. 数组表示法和指针表示法
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.8.3. 指针和字符串
 * 如果给cout提供一个字符的地址，则它会从该字符开始打印，直到遇到空字符为止
@@ -762,6 +755,7 @@ delete [] p;
 * 一般给cout提供一个指针，它将打印地址
 * 但如果指针类型是char *，cout将显示指向的字符串
 * 如果想要显示字符串的地址，则必须将这种指针强制转换成另一种指针类型，如int *
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.8.4. 使用new创建动态结构
 * 本节关于结构体的也适用于类
@@ -770,6 +764,7 @@ delete [] p;
 * 结构体指针访问成员
   1. 使用 <b>-></b>，如ps->m_mem;
   2. 使用(*ps).m_mem;
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.8.5. 分配内存的方法：自动存储、静态存储、动态存储和线程存储
 * C++11新增的线程存储，将在第9章简要讨论
@@ -788,10 +783,12 @@ delete [] p;
   1. new和delete运算符提供了一种比自动变量和静态变量更灵活的方法。 
   2. 自由存储空间（free store） 或堆（heap）
   3. new和delete可以在一个函数中分配，而在另一个函数中释放
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ## 4.9. 类型组合
 * 数组、结构体和指针
 * C++11提供auto
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ## 4.10. 数组的替代品
 ### 4.10.1. 模板类vector
@@ -811,6 +808,7 @@ delete [] p;
    * 声明创建一个名为vt的vector对象
    * 存储n_elem个类型为typeName的元素：
    * 其中参数n_elem可以是整型常量，也可以是整型变量。
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.10.2. 模板类array（C++）
 1. 简要概述：
@@ -824,6 +822,17 @@ delete [] p;
    * 声明创建一个名为arr的array对象
    * 存储n_elem个类型为typeName的元素：
    * 其中参数n_elem可以是整型常量，不可以是变量。
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
 
 ### 4.10.3. 比较数组、vector对象和array对象 
+- 三者都可用标准数组法访问各个元素
+- array对象和数组存储在栈
+- vector对象和数组存储在堆
+- array对象可直接赋值，而数组必须逐个复制
+- vector和array对象可以以使用成员函数at()避免越界
+  > a2.at(1) = 2.3
+
+<div align="right"><b><a href="#1-Learn_CPP">↥ back to top</a></b></div>
+<details>
+<summary>4. 复合类型</summary>
 </details>
